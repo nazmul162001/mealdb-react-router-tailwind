@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Navbar = (props) => {
 
@@ -14,10 +15,10 @@ const Navbar = (props) => {
         <input onChange={(e) => setSearchText(e.target.value)} className='md:w-[300px] h-[35px] bg-indigo-300 rounded-r-full rounded-l-full border-0 pr-3 pl-5 placeholder-gray-500  shadow-current shadow' placeholder='search your meal' type="search" name="" id="" />
       </div>
 
-      <div className="nav-menu md:order-3">
-        <Link className='px-2 text-white text-xl' to="/">Home</Link>
-        <Link className='px-2 text-white text-xl' to="/meals">Meal</Link>
-        <Link className='px-2 text-white text-xl' to="/contact">Contact</Link>
+      <div className="nav-menu md:order-3 flex">
+        <CustomLink className='px-2 text-gray-800 text-xl' to="/">Home</CustomLink>
+        <CustomLink className='px-2 text-gray-800 text-xl' to="/meals">Meal</CustomLink>
+        <CustomLink className='px-2 text-gray-800 text-xl' to="/contact">Contact</CustomLink>
       </div>
     </nav>
   );
