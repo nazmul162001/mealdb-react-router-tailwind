@@ -6,7 +6,6 @@ import Spinner from '../Spinner/Spinner';
 const Meals = ({searchText}) => {
   // console.log(searchText);
   const [meals, setMeals] = useState([])
-  // state for spinner 
   const [loading, setLoading] = useState(false)
   
   useEffect(() => {
