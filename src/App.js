@@ -6,6 +6,7 @@ import MealDetails from './components/MealDetails/MealDetails';
 import Meals from './components/Meals/Meals';
 import Navbar from './components/Navbar/Navbar';
 import NotFound from './components/NotFound/NotFound';
+import Spinner from './components/Spinner/Spinner';
 import Contact from './Contact/Contact';
 
 function App() {
